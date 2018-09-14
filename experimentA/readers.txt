@@ -1,0 +1,2 @@
+loci.formats.in.OMETiffReader
+loci.formats.in.TiffReader
