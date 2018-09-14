@@ -1,0 +1,11 @@
+---
+continue: true
+transfer: "ln_s"
+exclude: "clientpath"
+skip: "all"
+logprefix: "logs/"
+output: "yaml"
+path: "idr0047-experimentA-filePaths.tsv"
+columns:
+  - target
+  - path
