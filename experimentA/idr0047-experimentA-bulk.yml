@@ -6,6 +6,7 @@ skip: "all"
 logprefix: "logs/"
 output: "yaml"
 path: "idr0047-experimentA-filePaths.tsv"
+readers: "readers.txt"
 columns:
   - target
   - path
