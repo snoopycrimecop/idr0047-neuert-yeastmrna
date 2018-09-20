@@ -12,23 +12,23 @@
             <Channel Color="16711935" ID="Channel:0:3" Name="STL1 filter"/>
             <Channel Color="16711935"  ID="Channel:0:4" Name="STL1 immax"/>
 			<TiffData FirstC="0" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/M_nuclei_Exp1_rep1_0min_im1_nuclei3D.tiff">
+				<UUID FileName="M_nuclei_Exp1_rep1_0min_im1_nuclei3D.tiff">
 					urn:uuid:f2307570-bede-47a7-aa2b-4e23231ac291</UUID>
 			</TiffData>
 			<TiffData FirstC="1" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_CY53Dfilter.tiff"
+				<UUID FileName="SD_mRNA_Exp1_rep1_0min_im1_CY53Dfilter.tiff"
 					>urn:uuid:f2307570-bede-47a7-aa2b-4e23231ac292</UUID>
 			</TiffData>
 			<TiffData FirstC="2" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_CY53D3immax.tiff"
+				<UUID FileName="SD_mRNA_Exp1_rep1_0min_im1_CY53D3immax.tiff"
 					>urn:uuid:f2307570-bede-47a7-aa2b-4e23231ac293</UUID>
 			</TiffData>
 			<TiffData FirstC="3" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_TMR3Dfilter.tiff"
+				<UUID FileName="SD_mRNA_Exp1_rep1_0min_im1_TMR3Dfilter.tiff"
 					>urn:uuid:f2307570-bede-47a7-aa2b-4e23231ac294</UUID>
 			</TiffData>
 			<TiffData FirstC="4" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_TMR3D3immax.tiff"
+				<UUID FileName="SD_mRNA_Exp1_rep1_0min_im1_TMR3D3immax.tiff"
 					>urn:uuid:f2a07570-bede-47a7-aa2b-4e23231ac295</UUID>
 			</TiffData>
 		</Pixels>
@@ -43,31 +43,31 @@
             <Channel Color="16711935" ID="Channel:0:5" Name="STL1 max"/>
             <Channel Color="16711935" ID="Channel:0:6" Name="STL1 max filtered"/>
 			<TiffData FirstC="0" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/M_Lab_Exp1_rep1_0min_im1_Cells.tif">
+				<UUID FileName="M_Lab_Exp1_rep1_0min_im1_Cells.tif">
 					urn:uuid:4978087c-a670-4b12-af53-256c62d8d101</UUID>
 			</TiffData>
 			<TiffData FirstC="1" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/M_Lab_Exp1_rep1_0min_im1_trans_plane.tif"
+				<UUID FileName="M_Lab_Exp1_rep1_0min_im1_trans_plane.tif"
 					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d102</UUID>
 			</TiffData>
 			<TiffData FirstC="2" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/M_nuclei_Exp1_rep1_0min_im1_nuclei.tif"
+				<UUID FileName="M_nuclei_Exp1_rep1_0min_im1_nuclei.tif"
 					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d103</UUID>
 			</TiffData>
 			<TiffData FirstC="3" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_CY5max.tif"
+				<UUID FileName="SD_mRNA_Exp1_rep1_0min_im1_CY5max.tif"
 					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d104</UUID>
 			</TiffData>
 			<TiffData FirstC="4" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_CY5maxF.tif"
+				<UUID FileName="SD_mRNA_Exp1_rep1_0min_im1_CY5maxF.tif"
 					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d105</UUID>
 			</TiffData>
 			<TiffData FirstC="5" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_TMRmax.tif"
+				<UUID FileName="SD_mRNA_Exp1_rep1_0min_im1_TMRmax.tif"
 					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d106</UUID>
 			</TiffData>
 			<TiffData FirstC="6" IFD="0">
-				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_TMRmaxF.tif"
+				<UUID FileName="SD_mRNA_Exp1_rep1_0min_im1_TMRmaxF.tif"
 					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d107</UUID>
 			</TiffData>
 		</Pixels>
