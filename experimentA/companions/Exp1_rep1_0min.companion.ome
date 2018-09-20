@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:OME="http://www.openmicroscopy.org/Schemas/OME/2016-06"
+	xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06
+	http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd">
+	<Image ID="Image:0" Name="3D images">
+		<Pixels DimensionOrder="XYZTC" ID="Pixels:0:0" Type="uint16" SizeC="5" SizeT="1" SizeX="2048" SizeY="2048" SizeZ="25">
+            <Channel Color="65535" ID="Channel:0:0" Name="Nuclei"/>
+            <Channel Color="-16776961" ID="Channel:0:1" Name="CTT1 filter"/>
+            <Channel Color="-16776961" ID="Channel:0:2" Name="CTT1 immax"/>
+            <Channel Color="16711935" ID="Channel:0:3" Name="STL1 filter"/>
+            <Channel Color="16711935"  ID="Channel:0:4" Name="STL1 immax"/>
+			<TiffData FirstC="0" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/M_nuclei_Exp1_rep1_0min_im1_nuclei3D.tiff">
+					urn:uuid:f2307570-bede-47a7-aa2b-4e23231ac291</UUID>
+			</TiffData>
+			<TiffData FirstC="1" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_CY53Dfilter.tiff"
+					>urn:uuid:f2307570-bede-47a7-aa2b-4e23231ac292</UUID>
+			</TiffData>
+			<TiffData FirstC="2" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_CY53D3immax.tiff"
+					>urn:uuid:f2307570-bede-47a7-aa2b-4e23231ac293</UUID>
+			</TiffData>
+			<TiffData FirstC="3" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_TMR3Dfilter.tiff"
+					>urn:uuid:f2307570-bede-47a7-aa2b-4e23231ac294</UUID>
+			</TiffData>
+			<TiffData FirstC="4" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_TMR3D3immax.tiff"
+					>urn:uuid:f2a07570-bede-47a7-aa2b-4e23231ac295</UUID>
+			</TiffData>
+		</Pixels>
+	</Image>
+	<Image ID="Image:1" Name="Projections images">
+		<Pixels DimensionOrder="XYZTC" ID="Pixels:1:0" Type="uint16" SizeC="7" SizeT="1" SizeX="2048" SizeY="2048" SizeZ="1">
+            <Channel Color="-1" ID="Channel:0:0" Name="Cells"/>
+            <Channel Color="-1" ID="Channel:0:1" Name="Brightfield processed"/>
+            <Channel Color="65535" ID="Channel:0:2" Name="Nuclei"/>
+            <Channel Color="-16776961" ID="Channel:0:3" Name="CTT1 max"/>
+            <Channel Color="-16776961" ID="Channel:0:4" Name="CTT1 max filtered"/>
+            <Channel Color="16711935" ID="Channel:0:5" Name="STL1 max"/>
+            <Channel Color="16711935" ID="Channel:0:6" Name="STL1 max filtered"/>
+			<TiffData FirstC="0" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/M_Lab_Exp1_rep1_0min_im1_Cells.tif">
+					urn:uuid:4978087c-a670-4b12-af53-256c62d8d101</UUID>
+			</TiffData>
+			<TiffData FirstC="1" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/M_Lab_Exp1_rep1_0min_im1_trans_plane.tif"
+					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d102</UUID>
+			</TiffData>
+			<TiffData FirstC="2" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/M_nuclei_Exp1_rep1_0min_im1_nuclei.tif"
+					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d103</UUID>
+			</TiffData>
+			<TiffData FirstC="3" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_CY5max.tif"
+					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d104</UUID>
+			</TiffData>
+			<TiffData FirstC="4" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_CY5maxF.tif"
+					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d105</UUID>
+			</TiffData>
+			<TiffData FirstC="5" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_TMRmax.tif"
+					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d106</UUID>
+			</TiffData>
+			<TiffData FirstC="6" IFD="0">
+				<UUID FileName="/uod/idr/filesets/idr0047-neuert/20180911-ftp/Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_0min_im1_TMRmaxF.tif"
+					>urn:uuid:4978087c-a670-4b12-af53-256c62d8d107</UUID>
+			</TiffData>
+		</Pixels>
+	</Image>
+</OME>
