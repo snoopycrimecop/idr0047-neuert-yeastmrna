@@ -8,8 +8,9 @@ import xml.etree.ElementTree as ET
 
 BASE_DIRECTORY = os.environ.get(
     "BASE_DIRECTORY", "/uod/idr/filesets/idr0047-neuert/")
-NAME = 'Exp1_rep1_0min_im1'
 
+EXPERIMENTS = ['Exp1_rep1', 'Exp1_rep2', 'Exp2_rep1', 'Exp2_rep2', 'Exp2_rep3']
+TIMEPOINTS = [0, 1, 2, 4, 6, 8, 10, 15, 20, 25, 30, 35, 40, 50, 55]
 
 OME_ATTRIBUTES = {
     'xmlns': 'http://www.openmicroscopy.org/Schemas/OME/2016-06',
@@ -93,20 +94,27 @@ IMAGES = [
 ]
 
 
-# Create an element tree representing the OME metadata
-root = ET.Element("OME", attrib=OME_ATTRIBUTES)
-for i in IMAGES:
-    image = ET.SubElement(root, "Image", attrib=i["Image"])
-    pixels = ET.SubElement(image, "Pixels", attrib=i["Pixels"])
-    for channel in i["Channels"]:
-        ET.SubElement(pixels, "Channel", attrib=channel)
+def create_companion(name):
+    """Create a companion OME-XML for a given experiment"""
+    root = ET.Element("OME", attrib=OME_ATTRIBUTES)
+    for i in IMAGES:
+        image = ET.SubElement(root, "Image", attrib=i["Image"])
+        pixels = ET.SubElement(image, "Pixels", attrib=i["Pixels"])
+        for channel in i["Channels"]:
+            ET.SubElement(pixels, "Channel", attrib=channel)
 
-    tiffs = i["TIFFData"]
-    for t in range(len(tiffs)):
-        tiffdata = ET.SubElement(pixels, "TiffData", attrib={
-            "FirstC": str(t), "IFD": '0'})
-        ET.SubElement(tiffdata, "UUID", attrib={
-            "FileName": tiffs[t] % NAME}).text = str(uuid.uuid4())
+        tiffs = i["TIFFData"]
+        for t in range(len(tiffs)):
+            tiffdata = ET.SubElement(pixels, "TiffData", attrib={
+                "FirstC": str(t), "IFD": '0'})
+            ET.SubElement(tiffdata, "UUID", attrib={
+                "FileName": tiffs[t] % name}).text = str(uuid.uuid4())
 
-tree = ET.ElementTree(root)
-tree.write("%s.companion.ome" % NAME, encoding='utf-8', xml_declaration=True)
+    tree = ET.ElementTree(root)
+    tree.write("%s.companion.ome" % name, encoding='utf-8',
+               xml_declaration=True)
+
+
+for experiment in EXPERIMENTS:
+    for timepoint in TIMEPOINTS:
+        create_companion("%s_%g" % (experiment, timepoint))
