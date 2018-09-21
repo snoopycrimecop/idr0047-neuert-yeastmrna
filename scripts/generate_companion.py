@@ -117,4 +117,4 @@ def create_companion(name):
 
 for experiment in EXPERIMENTS:
     for timepoint in TIMEPOINTS:
-        create_companion("%s_%g" % (experiment, timepoint))
+        create_companion("%s_%gmin" % (experiment, timepoint))
