@@ -11,6 +11,7 @@ BASE_DIRECTORY = os.environ.get(
 
 EXPERIMENTS = ['Exp1_rep1', 'Exp1_rep2', 'Exp2_rep1', 'Exp2_rep2', 'Exp2_rep3']
 TIMEPOINTS = [0, 1, 2, 4, 6, 8, 10, 15, 20, 25, 30, 35, 40, 50, 55]
+POSITIONS = ['im1', 'im2', 'im3', 'im4']
 
 OME_ATTRIBUTES = {
     'xmlns': 'http://www.openmicroscopy.org/Schemas/OME/2016-06',
@@ -117,4 +118,5 @@ def create_companion(name):
 
 for experiment in EXPERIMENTS:
     for timepoint in TIMEPOINTS:
-        create_companion("%s_%gmin" % (experiment, timepoint))
+        for positin in POSITIONS:
+            create_companion("%s_%gmin_%s" % (experiment, timepoint, position))
