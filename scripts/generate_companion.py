@@ -118,5 +118,5 @@ def create_companion(name):
 
 for experiment in EXPERIMENTS:
     for timepoint in TIMEPOINTS:
-        for positin in POSITIONS:
+        for position in POSITIONS:
             create_companion("%s_%gmin_%s" % (experiment, timepoint, position))
