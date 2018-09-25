@@ -3,6 +3,8 @@
 # WARNING: This script will use your current OMERO login session if one
 # exists. If you want to use a different login ensure you logout first.
 
+DRYRUN = False
+
 import csv
 import os
 import omero.clients
@@ -10,45 +12,55 @@ import omero.cli
 
 
 def list_files(rootdir):
-    with open('idr0047-neuert-20180911-ftp.txt') as f:
-        files = [line.strip() for line in f.readlines()]
-        return files
-    # TODO: Run this for real on the actual filesystem instead of using
-    # a pre-generated list
+    # with open('idr0047-neuert-20180911-ftp.txt') as f:
+    #     files = [line.strip() for line in f.readlines()]
     files = [os.path.join(fileparts[0], filename)
              for fileparts in os.walk(rootdir)
              for filename in fileparts[2]
              if fileparts[2]]
 
     uploads = [fn for fn in files
-               if os.path.splitext(fn) not in ('.tif', '.tiff')]
-    assert set(os.path.splitext(fn) for fn in uploads) == set(
+               if os.path.splitext(fn)[1] not in ('.tif', '.tiff')]
+    assert set(os.path.splitext(fn)[1] for fn in uploads) == set(
         ['.csv', '.mat'])
     return uploads
 
 
-def upload_and_attach(conn, uploads):
-    datasets = {}
-    for exp in uploads:
-        ds = list(conn.getObjects('Dataset', attributes={'name': exp}))
-        assert len(ds) == 1
-        datasets[exp] = ds
+def upload_and_attach(conn, uploads, attachmap, datasets, images,
+                      failifexists=True, dryrun=False):
+    for filepath in uploads:
+        if filepath.endswith('csv'):
+            # https://tools.ietf.org/html/rfc7111
+            mimetype = 'text/csv'
+        else:
+            # http://justsolve.archiveteam.org/wiki/MAT
+            mimetype = 'application/x-matlab-data'
+        namespace = 'idr.openmicroscopy.org/unstable/analysis/original'
 
-    for (exp, filenames) in uploads.items():
-        for filename in filenames:
-            if filename.endswith('csv'):
-                # https://tools.ietf.org/html/rfc7111
-                mimetype = 'text/csv'
+        targetname = attachmap[filepath]
+        try:
+            target = images[targetname]
+        except KeyError:
+            target = datasets[targetname]
+
+        existingfas = set(
+            a.getFile().name for a in target.listAnnotations()
+            if isinstance(a, omero.gateway.FileAnnotationWrapper))
+        filename = os.path.split(filepath)[1]
+        if filename in existingfas:
+            msg = 'File %s already attached to %s' % (filename, target)
+            if failifexists:
+                raise Exception(msg)
             else:
-                # http://justsolve.archiveteam.org/wiki/MAT
-                mimetype = 'application/x-matlab-data'
+                print('WARNING: %s, skipping' % msg)
+                continue
 
+        print('Attaching %s to %s (%s %s %s)' % (
+              filename, target, filepath, mimetype, namespace))
+        if not dryrun:
             fa = conn.createFileAnnfromLocalFile(
-                filename,
-                ns='idr.openmicroscopy.org/unstable/analysis/original',
-                mimetype=mimetype,
-            )
-            datasets[exp].linkAnnotation(fa)
+                filepath, ns=namespace, mimetype=mimetype)
+            target.linkAnnotation(fa)
 
 
 def parse_processed_file(filename, rootdir):
@@ -57,11 +69,11 @@ def parse_processed_file(filename, rootdir):
     """
     attachmap = {}
     with open(filename) as f:
-        for line in csv.reader(f, delimiter='\t', quotechar="'"):
-            parent, windowspath, description = line
+        for line in csv.reader(f, delimiter='\t'):
+            parent, relpath, description = line
             if parent.startswith('#') or parent in ('Experiment', ''):
                 continue
-            filepath = os.path.join(rootdir, *windowspath.split('\\'))
+            filepath = os.path.join(rootdir, relpath)
             attachmap[filepath] = parent
     return attachmap
 
@@ -85,15 +97,20 @@ def main(conn):
     rootdir = '/uod/idr/filesets/idr0047-neuert/20180911-ftp'
     uploads = list_files(rootdir)
     attachmap = parse_processed_file(
-        'idr0000-experimentB-processed.txt', rootdir)
+        '../idr0047-experimentA-processed.txt', rootdir)
     datasets, images = get_omero_targets(conn, 'idr0047-neuert')
+
     # Cross-check
     datasetsimages = set(datasets.keys()).union(images.keys())
     attach_without_target = set(attachmap.values()).difference(
         datasetsimages)
-    assert attach_without_target == set(), sorted(attach_without_target)
     uploads_without_attach = set(uploads).difference(attachmap.keys())
-    assert uploads_without_attach == set(), sorted(uploads_without_attach)
+
+    assert attach_without_target == set(), sorted(attach_without_target)
+    assert uploads_without_attach == set(), sorted(uploads_without_attach)[:2]
+
+    upload_and_attach(conn, uploads, attachmap, datasets, images,
+                      failifexists=True, dryrun=DRYRUN)
 
 
 if __name__ == '__main__':
