@@ -7,7 +7,7 @@ import uuid
 import xml.etree.ElementTree as ET
 
 BASE_DIRECTORY = os.environ.get(
-    "BASE_DIRECTORY", "/uod/idr/filesets/idr0047-neuert/")
+    "BASE_DIRECTORY", "/uod/idr/filesets/idr0047-neuert-yeastmRNA/")
 
 EXPERIMENTS = ['Exp1_rep1', 'Exp1_rep2', 'Exp2_rep1', 'Exp2_rep2', 'Exp2_rep3']
 TIMEPOINTS = [0, 1, 2, 4, 6, 8, 10, 15, 20, 25, 30, 35, 40, 50, 55]
