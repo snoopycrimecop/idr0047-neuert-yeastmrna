@@ -3,8 +3,8 @@ Dataset:name:Exp1_rep2	/tmp/idr0047-neuert-yeastmRNA/20181016-ftp/Exp1_rep2/#1_R
 Dataset:name:Exp2_rep1	/tmp/idr0047-neuert-yeastmRNA/20181016-ftp/Exp2_rep1/#1_Raw_Images
 Dataset:name:Exp2_rep2	/tmp/idr0047-neuert-yeastmRNA/20181016-ftp/Exp2_rep2/#1_Raw_Images
 Dataset:name:Exp2_rep3	/tmp/idr0047-neuert-yeastmRNA/20181016-ftp/Exp2_rep3/#1_Raw_Images
-Dataset:name:Exp1_rep1	/tmp/idr0047-neuert-yeastmRNA/20181112-companions/Exp1_rep1
-Dataset:name:Exp1_rep2	/tmp/idr0047-neuert-yeastmRNA/20181112-companions/Exp1_rep2
-Dataset:name:Exp2_rep1	/tmp/idr0047-neuert-yeastmRNA/20181112-companions/Exp2_rep1
-Dataset:name:Exp2_rep2	/tmp/idr0047-neuert-yeastmRNA/20181112-companions/Exp2_rep2
-Dataset:name:Exp2_rep3	/tmp/idr0047-neuert-yeastmRNA/20181112-companions/Exp2_rep3
+Dataset:name:Exp1_rep1	/tmp/idr0047-neuert-yeastmRNA/20181211-companions/Exp1_rep1
+Dataset:name:Exp1_rep2	/tmp/idr0047-neuert-yeastmRNA/20181211-companions/Exp1_rep2
+Dataset:name:Exp2_rep1	/tmp/idr0047-neuert-yeastmRNA/20181211-companions/Exp2_rep1
+Dataset:name:Exp2_rep2	/tmp/idr0047-neuert-yeastmRNA/20181211-companions/Exp2_rep2
+Dataset:name:Exp2_rep3	/tmp/idr0047-neuert-yeastmRNA/20181211-companions/Exp2_rep3
