@@ -87,11 +87,11 @@ IMAGES = [
              'Name': 'STL1 immax', 'SamplesPerPixel': '1'},
         ],
         'TIFFData': [
-            '../../20181016-ftp/#2_Analyzed_images/%s/M_nuclei_%s_nuclei3D.tiff',
-            '../../20181016-ftp/#2_Analyzed_images/%s/SD_mRNA_%s_CY53Dfilter.tiff',
-            '../../20181016-ftp/#2_Analyzed_images/%s/SD_mRNA_%s_CY53D3immax.tiff',
-            '../../20181016-ftp/#2_Analyzed_images/%s/SD_mRNA_%s_TMR3Dfilter.tiff',
-            '../../20181016-ftp/#2_Analyzed_images/%s/SD_mRNA_%s_TMR3D3immax.tiff'
+            '../../20181016-ftp/%s/#2_Analyzed_images/M_nuclei_%s_nuclei3D.tiff',
+            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_CY53Dfilter.tiff',
+            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_CY53D3immax.tiff',
+            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_TMR3Dfilter.tiff',
+            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_TMR3D3immax.tiff'
         ]
     },
     {
@@ -123,13 +123,13 @@ IMAGES = [
              'Name': 'STL1 filt', 'SamplesPerPixel': '1'},
         ],
         'TIFFData': [
-            '../../20181016-ftp/#2_Analyzed_images/%s/M_Lab_%s_Cells.tif',
-            '../../20181016-ftp/#2_Analyzed_images/%s/M_Lab_%s_trans_plane.tif',
-            '../../20181016-ftp/#2_Analyzed_images/%s/M_nuclei_%s_nuclei.tif',
-            '../../20181016-ftp/#2_Analyzed_images/%s/SD_mRNA_%s_CY5max.tif',
-            '../../20181016-ftp/#2_Analyzed_images/%s/SD_mRNA_%s_CY5maxF.tif',
-            '../../20181016-ftp/#2_Analyzed_images/%s/SD_mRNA_%s_TMRmax.tif',
-            '../../20181016-ftp/#2_Analyzed_images/%s/SD_mRNA_%s_TMRmaxF.tif',
+            '../../20181016-ftp/%s/#2_Analyzed_images/M_Lab_%s_Cells.tif',
+            '../../20181016-ftp/%s/#2_Analyzed_images/M_Lab_%s_trans_plane.tif',
+            '../../20181016-ftp/%s/#2_Analyzed_images/M_nuclei_%s_nuclei.tif',
+            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_CY5max.tif',
+            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_CY5maxF.tif',
+            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_TMRmax.tif',
+            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_TMRmaxF.tif',
         ],
     }
 ]
