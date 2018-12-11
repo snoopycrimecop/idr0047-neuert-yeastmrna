@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # Generate companion files
 
+from datetime import date
 import glob
 import os
 import os.path
