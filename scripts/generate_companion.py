@@ -5,7 +5,6 @@ from datetime import date
 import glob
 import os
 import os.path
-import sys
 import uuid
 import xml.etree.ElementTree as ET
 
