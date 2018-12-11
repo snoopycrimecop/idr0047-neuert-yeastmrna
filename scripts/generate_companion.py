@@ -136,7 +136,12 @@ IMAGES = [
 
 
 COMPANION_DIRECTORY = os.path.join(
-    BASE_DIRECTORY, "%s-companions" % date.today().strftime("%Y-%m-%d"))
+    BASE_DIRECTORY, "%s-companions" % date.today().strftime("%Y%m%d"))
+
+for e in experiments:
+    e_directory = os.path.join(COMPANION_DIRECTORY, e)
+    if not os.path.exists(e_directory):
+        os.makedirs(e_directory)
 
 
 def create_companion(experiment, timepoint, position):
