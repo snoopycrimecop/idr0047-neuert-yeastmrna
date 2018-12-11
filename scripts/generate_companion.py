@@ -10,8 +10,8 @@ import xml.etree.ElementTree as ET
 
 
 BASE_DIRECTORY = os.environ.get(
-    "BASE_DIRECTORY",
-    "/uod/idr/filesets/idr0047-neuert-yeastmRNA/20181016-ftp")
+    "BASE_DIRECTORY", "/uod/idr/filesets/idr0047-neuert-yeastmRNA")
+FTP_FOLDER = "20181016-ftp"
 RAW_IMAGES_DIR = "#1_Raw_Images"
 ANALYZED_IMAGES_DIR = "#2_Analyzed_images"
 
@@ -34,7 +34,7 @@ MISSING_IMAGES = set([
 # Review raw images
 raw_images_list = map(
     os.path.basename,
-    glob.glob("%s/*/%s/*" % (BASE_DIRECTORY, RAW_IMAGES_DIR)))
+    glob.glob("%s/%s/*/%s/*" % (BASE_DIRECTORY, FTP_FOLDER, RAW_IMAGES_DIR)))
 expected_images_list = [
     '%s_%gmin_%s.tif' % (x, y, z) for x in EXPERIMENTS for
     y in EXPERIMENTS[x] for z in POSITIONS]
@@ -45,7 +45,8 @@ extra_raw_images = set(raw_images_list) - set(expected_images_list)
 
 sd_mRNA_mat_list = map(
     os.path.basename,
-    glob.glob("%s/*/%s/SD_mRNA*.mat" % (BASE_DIRECTORY, ANALYZED_IMAGES_DIR)))
+    glob.glob("%s/%s/*/%s/SD_mRNA*.mat" % (
+        BASE_DIRECTORY, FTP_FOLDER, ANALYZED_IMAGES_DIR)))
 expected_mat_list = ['SD_mRNA_%s.mat' % x[:-4] for x in raw_images_list]
 assert not sorted(set(expected_mat_list) - set(sd_mRNA_mat_list))
 assert not sorted(set(sd_mRNA_mat_list) - set(expected_mat_list))
@@ -134,8 +135,7 @@ IMAGES = [
 
 
 COMPANION_DIRECTORY = os.path.join(
-    os.path.dirname(os.path.realpath(sys.argv[0])), '..', 'experimentA',
-    'companions')
+    BASE_DIRECTORY, "%s-companions" % date.today().strftime("%Y-%m-%d"))
 
 
 def create_companion(experiment, timepoint, position):
