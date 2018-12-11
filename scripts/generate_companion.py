@@ -51,6 +51,20 @@ expected_mat_list = ['SD_mRNA_%s.mat' % x[:-4] for x in raw_images_list]
 assert not sorted(set(expected_mat_list) - set(sd_mRNA_mat_list))
 assert not sorted(set(sd_mRNA_mat_list) - set(expected_mat_list))
 
+
+# Create secondary folder for analyzed files with companions
+COMPANION_DIRECTORY = os.path.join(
+    BASE_DIRECTORY, "%s-companions" % date.today().strftime("%Y%m%d"))
+
+for e in EXPERIMENTS:
+    experiment_source_directory = os.path.join(BASE_DIRECTORY, FTP_FOLDER, e)
+    experiment_target_directory = os.path.join(COMPANION_DIRECTORY, e)
+    if not os.path.exists(experiment_target_directory):
+        os.makedirs(experiment_target_directory)
+        os.symlink(
+            os.path.join(experiment_source_directory, ANALYZED_IMAGES_DIR),
+            os.path.join(experiment_target_directory, ANALYZED_IMAGES_DIR))
+
 # Generate companion OME-XML
 OME_ATTRIBUTES = {
     'xmlns': 'http://www.openmicroscopy.org/Schemas/OME/2016-06',
@@ -59,7 +73,6 @@ OME_ATTRIBUTES = {
     'xsi:schemaLocation': 'http://www.openmicroscopy.org/Schemas/OME/2016-06 \
 http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd',
 }
-
 IMAGES = [
     {
         'Image': {'ID': 'Image:0', 'Name': '3D images'},
@@ -86,11 +99,11 @@ IMAGES = [
              'Name': 'STL1 immax', 'SamplesPerPixel': '1'},
         ],
         'TIFFData': [
-            '../../20181016-ftp/%s/#2_Analyzed_images/M_nuclei_%s_nuclei3D.tiff',
-            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_CY53Dfilter.tiff',
-            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_CY53D3immax.tiff',
-            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_TMR3Dfilter.tiff',
-            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_TMR3D3immax.tiff'
+            ANALYZED_IMAGES_DIR + '/M_nuclei_%s_nuclei3D.tiff',
+            ANALYZED_IMAGES_DIR + '/SD_mRNA_%s_CY53Dfilter.tiff',
+            ANALYZED_IMAGES_DIR + '/SD_mRNA_%s_CY53D3immax.tiff',
+            ANALYZED_IMAGES_DIR + '/SD_mRNA_%s_TMR3Dfilter.tiff',
+            ANALYZED_IMAGES_DIR + '/SD_mRNA_%s_TMR3D3immax.tiff'
         ]
     },
     {
@@ -122,25 +135,16 @@ IMAGES = [
              'Name': 'STL1 filt', 'SamplesPerPixel': '1'},
         ],
         'TIFFData': [
-            '../../20181016-ftp/%s/#2_Analyzed_images/M_Lab_%s_Cells.tif',
-            '../../20181016-ftp/%s/#2_Analyzed_images/M_Lab_%s_trans_plane.tif',
-            '../../20181016-ftp/%s/#2_Analyzed_images/M_nuclei_%s_nuclei.tif',
-            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_CY5max.tif',
-            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_CY5maxF.tif',
-            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_TMRmax.tif',
-            '../../20181016-ftp/%s/#2_Analyzed_images/SD_mRNA_%s_TMRmaxF.tif',
+            ANALYZED_IMAGES_DIR + '/M_Lab_%s_Cells.tif',
+            ANALYZED_IMAGES_DIR + '/M_Lab_%s_trans_plane.tif',
+            ANALYZED_IMAGES_DIR + '/M_nuclei_%s_nuclei.tif',
+            ANALYZED_IMAGES_DIR + '/SD_mRNA_%s_CY5max.tif',
+            ANALYZED_IMAGES_DIR + '/SD_mRNA_%s_CY5maxF.tif',
+            ANALYZED_IMAGES_DIR + '/SD_mRNA_%s_TMRmax.tif',
+            ANALYZED_IMAGES_DIR + '/SD_mRNA_%s_TMRmaxF.tif',
         ],
     }
 ]
-
-
-COMPANION_DIRECTORY = os.path.join(
-    BASE_DIRECTORY, "%s-companions" % date.today().strftime("%Y%m%d"))
-
-for e in EXPERIMENTS:
-    e_directory = os.path.join(COMPANION_DIRECTORY, e)
-    if not os.path.exists(e_directory):
-        os.makedirs(e_directory)
 
 
 def create_companion(experiment, timepoint, position):
@@ -158,7 +162,7 @@ def create_companion(experiment, timepoint, position):
             tiffdata = ET.SubElement(pixels, "TiffData", attrib={
                 "FirstC": str(t), "IFD": '0'})
             ET.SubElement(tiffdata, "UUID", attrib={
-                "FileName": tiffs[t] % (experiment, name)
+                "FileName": tiffs[t] % (name)
                 }).text = str(uuid.uuid4())
 
     tree = ET.ElementTree(root)
