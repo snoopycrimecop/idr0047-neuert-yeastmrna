@@ -1198,12 +1198,12 @@ Exp1_rep1_8min_im4.tif	Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_8min_im4_T
 Exp1_rep1_8min_im4.tif	Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_8min_im4_TMRmax.tif	Maximum intensity of the raw RNA-FISH image for all detected RNA spots in the image stack
 Exp1_rep1_8min_im4.tif	Exp1_rep1/#2_Analyzed_images/SD_mRNA_Exp1_rep1_8min_im4_TMRmaxF.tif	Maximum intensity of the filtered RNA-FISH image for all RNA spots in the image stack
 Exp1_rep1	Exp1_rep1/#3_Results/Results_Exp1_rep1.mat	Matlab file with counts for CTT1 mRNA labeled with CY5 and STL1 mRNA labeled with TMR for all cells and all time points
-Exp1_rep1	Exp1_rep1/#3_Results/Results_Exp1_rep1_RNA_CY5_cytoplasm.csv	Counts for CTT1 mRNA labeled with CY5 in the cytoplasm for all cells and all time points
-Exp1_rep1	Exp1_rep1/#3_Results/Results_Exp1_rep1_RNA_CY5_nuclear.csv	Counts for CTT1 mRNA labeled with CY5 in the nucleus for all cells and all time points
-Exp1_rep1	Exp1_rep1/#3_Results/Results_Exp1_rep1_RNA_CY5_total.csv	Counts for CTT1 mRNA labeled with CY5 for all cells and all time points
-Exp1_rep1	Exp1_rep1/#3_Results/Results_Exp1_rep1_RNA_TMR_cytoplasm.csv	Counts for STL1 mRNA labeled with TMR in the cytoplasm for all cells and all time points
-Exp1_rep1	Exp1_rep1/#3_Results/Results_Exp1_rep1_RNA_TMR_nuclear.csv	Counts for STL1 mRNA labeled with TMR in the nucleus for all cells and all time points
-Exp1_rep1	Exp1_rep1/#3_Results/Results_Exp1_rep1_RNA_TMR_total.csv	Counts for STL1 mRNA labeled with TMR for all cells and all time points
+Exp1_rep1	Exp1_rep1/#3_Results/Result_Exp1_rep1_RNA_CY5_cytoplasm.csv	Counts for CTT1 mRNA labeled with CY5 in the cytoplasm for all cells and all time points
+Exp1_rep1	Exp1_rep1/#3_Results/Result_Exp1_rep1_RNA_CY5_nuclear.csv	Counts for CTT1 mRNA labeled with CY5 in the nucleus for all cells and all time points
+Exp1_rep1	Exp1_rep1/#3_Results/Result_Exp1_rep1_RNA_CY5_total.csv	Counts for CTT1 mRNA labeled with CY5 for all cells and all time points
+Exp1_rep1	Exp1_rep1/#3_Results/Result_Exp1_rep1_RNA_TMR_cytoplasm.csv	Counts for STL1 mRNA labeled with TMR in the cytoplasm for all cells and all time points
+Exp1_rep1	Exp1_rep1/#3_Results/Result_Exp1_rep1_RNA_TMR_nuclear.csv	Counts for STL1 mRNA labeled with TMR in the nucleus for all cells and all time points
+Exp1_rep1	Exp1_rep1/#3_Results/Result_Exp1_rep1_RNA_TMR_total.csv	Counts for STL1 mRNA labeled with TMR for all cells and all time points
 		
 Exp1_rep2_0min_im1.tif	Exp1_rep2/#2_Analyzed_images/M_Lab_Exp1_rep2_0min_im1.mat	Matlab files containing all the M_Lab data.
 Exp1_rep2_0min_im1.tif	Exp1_rep2/#2_Analyzed_images/M_Lab_Exp1_rep2_0min_im1_CellInfo.csv	"5 cell properties for each cell: 1,2: cell centroid x and y; 3: cell major axis; 4; cell minor axis; 5: Area of the cell"
@@ -2422,12 +2422,12 @@ Exp1_rep2_8min_im4.tif	Exp1_rep2/#2_Analyzed_images/SD_mRNA_Exp1_rep2_8min_im4_T
 Exp1_rep2_8min_im4.tif	Exp1_rep2/#2_Analyzed_images/SD_mRNA_Exp1_rep2_8min_im4_TMRmax.tif	Maximum intensity of the raw RNA-FISH image for all detected RNA spots in the image stack
 Exp1_rep2_8min_im4.tif	Exp1_rep2/#2_Analyzed_images/SD_mRNA_Exp1_rep2_8min_im4_TMRmaxF.tif	Maximum intensity of the filtered RNA-FISH image for all RNA spots in the image stack
 Exp1_rep2	Exp1_rep2/#3_Results/Results_Exp1_rep2.mat	Matlab file with counts for CTT1 mRNA labeled with CY5 and STL1 mRNA labeled with TMR for all cells and all time points
-Exp1_rep2	Exp1_rep2/#3_Results/Results_Exp1_rep2_RNA_CY5_cytoplasm.csv	Counts for CTT1 mRNA labeled with CY5 in the cytoplasm for all cells and all time points
-Exp1_rep2	Exp1_rep2/#3_Results/Results_Exp1_rep2_RNA_CY5_nuclear.csv	Counts for CTT1 mRNA labeled with CY5 in the nucleus for all cells and all time points
-Exp1_rep2	Exp1_rep2/#3_Results/Results_Exp1_rep2_RNA_CY5_total.csv	Counts for CTT1 mRNA labeled with CY5 for all cells and all time points
-Exp1_rep2	Exp1_rep2/#3_Results/Results_Exp1_rep2_RNA_TMR_cytoplasm.csv	Counts for STL1 mRNA labeled with TMR in the cytoplasm for all cells and all time points
-Exp1_rep2	Exp1_rep2/#3_Results/Results_Exp1_rep2_RNA_TMR_nuclear.csv	Counts for STL1 mRNA labeled with TMR in the nucleus for all cells and all time points
-Exp1_rep2	Exp1_rep2/#3_Results/Results_Exp1_rep2_RNA_TMR_total.csv	Counts for STL1 mRNA labeled with TMR for all cells and all time points
+Exp1_rep2	Exp1_rep2/#3_Results/Result_Exp1_rep2_RNA_CY5_cytoplasm.csv	Counts for CTT1 mRNA labeled with CY5 in the cytoplasm for all cells and all time points
+Exp1_rep2	Exp1_rep2/#3_Results/Result_Exp1_rep2_RNA_CY5_nuclear.csv	Counts for CTT1 mRNA labeled with CY5 in the nucleus for all cells and all time points
+Exp1_rep2	Exp1_rep2/#3_Results/Result_Exp1_rep2_RNA_CY5_total.csv	Counts for CTT1 mRNA labeled with CY5 for all cells and all time points
+Exp1_rep2	Exp1_rep2/#3_Results/Result_Exp1_rep2_RNA_TMR_cytoplasm.csv	Counts for STL1 mRNA labeled with TMR in the cytoplasm for all cells and all time points
+Exp1_rep2	Exp1_rep2/#3_Results/Result_Exp1_rep2_RNA_TMR_nuclear.csv	Counts for STL1 mRNA labeled with TMR in the nucleus for all cells and all time points
+Exp1_rep2	Exp1_rep2/#3_Results/Result_Exp1_rep2_RNA_TMR_total.csv	Counts for STL1 mRNA labeled with TMR for all cells and all time points
 		
 Exp2_rep1_0min_im1.tif	Exp2_rep1/#2_Analyzed_images/M_Lab_Exp2_rep1_0min_im1.mat	Matlab files containing all the M_Lab data.
 Exp2_rep1_0min_im1.tif	Exp2_rep1/#2_Analyzed_images/M_Lab_Exp2_rep1_0min_im1_CellInfo.csv	"5 cell properties for each cell: 1,2: cell centroid x and y; 3: cell major axis; 4; cell minor axis; 5: Area of the cell"
@@ -3779,12 +3779,12 @@ Exp2_rep1_8min_im4.tif	Exp2_rep1/#2_Analyzed_images/SD_mRNA_Exp2_rep1_8min_im4_T
 Exp2_rep1_8min_im4.tif	Exp2_rep1/#2_Analyzed_images/SD_mRNA_Exp2_rep1_8min_im4_TMRmax.tif	Maximum intensity of the raw RNA-FISH image for all detected RNA spots in the image stack
 Exp2_rep1_8min_im4.tif	Exp2_rep1/#2_Analyzed_images/SD_mRNA_Exp2_rep1_8min_im4_TMRmaxF.tif	Maximum intensity of the filtered RNA-FISH image for all RNA spots in the image stack
 Exp2_rep1	Exp2_rep1/#3_Results/Results_Exp2_rep1.mat	Matlab file with counts for CTT1 mRNA labeled with CY5 and STL1 mRNA labeled with TMR for all cells and all time points
-Exp2_rep1	Exp2_rep1/#3_Results/Results_Exp2_rep1_RNA_CY5_cytoplasm.csv	Counts for CTT1 mRNA labeled with CY5 in the cytoplasm for all cells and all time points
-Exp2_rep1	Exp2_rep1/#3_Results/Results_Exp2_rep1_RNA_CY5_nuclear.csv	Counts for CTT1 mRNA labeled with CY5 in the nucleus for all cells and all time points
-Exp2_rep1	Exp2_rep1/#3_Results/Results_Exp2_rep1_RNA_CY5_total.csv	Counts for CTT1 mRNA labeled with CY5 for all cells and all time points
-Exp2_rep1	Exp2_rep1/#3_Results/Results_Exp2_rep1_RNA_TMR_cytoplasm.csv	Counts for STL1 mRNA labeled with TMR in the cytoplasm for all cells and all time points
-Exp2_rep1	Exp2_rep1/#3_Results/Results_Exp2_rep1_RNA_TMR_nuclear.csv	Counts for STL1 mRNA labeled with TMR in the nucleus for all cells and all time points
-Exp2_rep1	Exp2_rep1/#3_Results/Results_Exp2_rep1_RNA_TMR_total.csv	Counts for STL1 mRNA labeled with TMR for all cells and all time points
+Exp2_rep1	Exp2_rep1/#3_Results/Result_Exp2_rep1_RNA_CY5_cytoplasm.csv	Counts for CTT1 mRNA labeled with CY5 in the cytoplasm for all cells and all time points
+Exp2_rep1	Exp2_rep1/#3_Results/Result_Exp2_rep1_RNA_CY5_nuclear.csv	Counts for CTT1 mRNA labeled with CY5 in the nucleus for all cells and all time points
+Exp2_rep1	Exp2_rep1/#3_Results/Result_Exp2_rep1_RNA_CY5_total.csv	Counts for CTT1 mRNA labeled with CY5 for all cells and all time points
+Exp2_rep1	Exp2_rep1/#3_Results/Result_Exp2_rep1_RNA_TMR_cytoplasm.csv	Counts for STL1 mRNA labeled with TMR in the cytoplasm for all cells and all time points
+Exp2_rep1	Exp2_rep1/#3_Results/Result_Exp2_rep1_RNA_TMR_nuclear.csv	Counts for STL1 mRNA labeled with TMR in the nucleus for all cells and all time points
+Exp2_rep1	Exp2_rep1/#3_Results/Result_Exp2_rep1_RNA_TMR_total.csv	Counts for STL1 mRNA labeled with TMR for all cells and all time points
 		
 Exp2_rep2_0min_im1.tif	Exp2_rep2/#2_Analyzed_images/M_Lab_Exp2_rep2_0min_im1.mat	Matlab files containing all the M_Lab data.
 Exp2_rep2_0min_im1.tif	Exp2_rep2/#2_Analyzed_images/M_Lab_Exp2_rep2_0min_im1_CellInfo.csv	"5 cell properties for each cell: 1,2: cell centroid x and y; 3: cell major axis; 4; cell minor axis; 5: Area of the cell"
@@ -5114,12 +5114,12 @@ Exp2_rep2_8min_im4.tif	Exp2_rep2/#2_Analyzed_images/SD_mRNA_Exp2_rep2_8min_im4_T
 Exp2_rep2_8min_im4.tif	Exp2_rep2/#2_Analyzed_images/SD_mRNA_Exp2_rep2_8min_im4_TMRmax.tif	Maximum intensity of the raw RNA-FISH image for all detected RNA spots in the image stack
 Exp2_rep2_8min_im4.tif	Exp2_rep2/#2_Analyzed_images/SD_mRNA_Exp2_rep2_8min_im4_TMRmaxF.tif	Maximum intensity of the filtered RNA-FISH image for all RNA spots in the image stack
 Exp2_rep2	Exp2_rep2/#3_Results/Results_Exp2_rep2.mat	Matlab file with counts for CTT1 mRNA labeled with CY5 and STL1 mRNA labeled with TMR for all cells and all time points
-Exp2_rep2	Exp2_rep2/#3_Results/Results_Exp2_rep2_RNA_CY5_cytoplasm.csv	Counts for CTT1 mRNA labeled with CY5 in the cytoplasm for all cells and all time points
-Exp2_rep2	Exp2_rep2/#3_Results/Results_Exp2_rep2_RNA_CY5_nuclear.csv	Counts for CTT1 mRNA labeled with CY5 in the nucleus for all cells and all time points
-Exp2_rep2	Exp2_rep2/#3_Results/Results_Exp2_rep2_RNA_CY5_total.csv	Counts for CTT1 mRNA labeled with CY5 for all cells and all time points
-Exp2_rep2	Exp2_rep2/#3_Results/Results_Exp2_rep2_RNA_TMR_cytoplasm.csv	Counts for STL1 mRNA labeled with TMR in the cytoplasm for all cells and all time points
-Exp2_rep2	Exp2_rep2/#3_Results/Results_Exp2_rep2_RNA_TMR_nuclear.csv	Counts for STL1 mRNA labeled with TMR in the nucleus for all cells and all time points
-Exp2_rep2	Exp2_rep2/#3_Results/Results_Exp2_rep2_RNA_TMR_total.csv	Counts for STL1 mRNA labeled with TMR for all cells and all time points
+Exp2_rep2	Exp2_rep2/#3_Results/Result_Exp2_rep2_RNA_CY5_cytoplasm.csv	Counts for CTT1 mRNA labeled with CY5 in the cytoplasm for all cells and all time points
+Exp2_rep2	Exp2_rep2/#3_Results/Result_Exp2_rep2_RNA_CY5_nuclear.csv	Counts for CTT1 mRNA labeled with CY5 in the nucleus for all cells and all time points
+Exp2_rep2	Exp2_rep2/#3_Results/Result_Exp2_rep2_RNA_CY5_total.csv	Counts for CTT1 mRNA labeled with CY5 for all cells and all time points
+Exp2_rep2	Exp2_rep2/#3_Results/Result_Exp2_rep2_RNA_TMR_cytoplasm.csv	Counts for STL1 mRNA labeled with TMR in the cytoplasm for all cells and all time points
+Exp2_rep2	Exp2_rep2/#3_Results/Result_Exp2_rep2_RNA_TMR_nuclear.csv	Counts for STL1 mRNA labeled with TMR in the nucleus for all cells and all time points
+Exp2_rep2	Exp2_rep2/#3_Results/Result_Exp2_rep2_RNA_TMR_total.csv	Counts for STL1 mRNA labeled with TMR for all cells and all time points
 		
 Exp2_rep3_0min_im1.tif	Exp2_rep3/#2_Analyzed_images/M_Lab_Exp2_rep3_0min_im1.mat	Matlab files containing all the M_Lab data.
 Exp2_rep3_0min_im1.tif	Exp2_rep3/#2_Analyzed_images/M_Lab_Exp2_rep3_0min_im1_CellInfo.csv	"5 cell properties for each cell: 1,2: cell centroid x and y; 3: cell major axis; 4; cell minor axis; 5: Area of the cell"
@@ -6395,9 +6395,9 @@ Exp2_rep3_8min_im5.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_8min_im5_T
 Exp2_rep3_8min_im5.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_8min_im5_TMRmax.tif	Maximum intensity of the raw RNA-FISH image for all detected RNA spots in the image stack
 Exp2_rep3_8min_im5.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_8min_im5_TMRmaxF.tif	Maximum intensity of the filtered RNA-FISH image for all RNA spots in the image stack
 Exp2_rep3	Exp2_rep3/#3_Results/Results_Exp2_rep3.mat	Matlab file with counts for CTT1 mRNA labeled with CY5 and STL1 mRNA labeled with TMR for all cells and all time points
-Exp2_rep3	Exp2_rep3/#3_Results/Results_Exp2_rep3_RNA_CY5_cytoplasm.csv	Counts for CTT1 mRNA labeled with CY5 in the cytoplasm for all cells and all time points
-Exp2_rep3	Exp2_rep3/#3_Results/Results_Exp2_rep3_RNA_CY5_nuclear.csv	Counts for CTT1 mRNA labeled with CY5 in the nucleus for all cells and all time points
-Exp2_rep3	Exp2_rep3/#3_Results/Results_Exp2_rep3_RNA_CY5_total.csv	Counts for CTT1 mRNA labeled with CY5 for all cells and all time points
-Exp2_rep3	Exp2_rep3/#3_Results/Results_Exp2_rep3_RNA_TMR_cytoplasm.csv	Counts for STL1 mRNA labeled with TMR in the cytoplasm for all cells and all time points
-Exp2_rep3	Exp2_rep3/#3_Results/Results_Exp2_rep3_RNA_TMR_nuclear.csv	Counts for STL1 mRNA labeled with TMR in the nucleus for all cells and all time points
-Exp2_rep3	Exp2_rep3/#3_Results/Results_Exp2_rep3_RNA_TMR_total.csv	Counts for STL1 mRNA labeled with TMR for all cells and all time points
+Exp2_rep3	Exp2_rep3/#3_Results/Result_Exp2_rep3_RNA_CY5_cytoplasm.csv	Counts for CTT1 mRNA labeled with CY5 in the cytoplasm for all cells and all time points
+Exp2_rep3	Exp2_rep3/#3_Results/Result_Exp2_rep3_RNA_CY5_nuclear.csv	Counts for CTT1 mRNA labeled with CY5 in the nucleus for all cells and all time points
+Exp2_rep3	Exp2_rep3/#3_Results/Result_Exp2_rep3_RNA_CY5_total.csv	Counts for CTT1 mRNA labeled with CY5 for all cells and all time points
+Exp2_rep3	Exp2_rep3/#3_Results/Result_Exp2_rep3_RNA_TMR_cytoplasm.csv	Counts for STL1 mRNA labeled with TMR in the cytoplasm for all cells and all time points
+Exp2_rep3	Exp2_rep3/#3_Results/Result_Exp2_rep3_RNA_TMR_nuclear.csv	Counts for STL1 mRNA labeled with TMR in the nucleus for all cells and all time points
+Exp2_rep3	Exp2_rep3/#3_Results/Result_Exp2_rep3_RNA_TMR_total.csv	Counts for STL1 mRNA labeled with TMR for all cells and all time points
