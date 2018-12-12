@@ -6031,17 +6031,17 @@ Exp2_rep3_30min_im5.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_30min_im5
 Exp2_rep3_30min_im5.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_30min_im5_TMR3Dfilter.tiff	Gaussian smoothed and Laplacian of a gaussian filtered RNA FISH image stack
 Exp2_rep3_30min_im5.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_30min_im5_TMRmax.tif	Maximum intensity of the raw RNA-FISH image for all detected RNA spots in the image stack
 Exp2_rep3_30min_im5.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_30min_im5_TMRmaxF.tif	Maximum intensity of the filtered RNA-FISH image for all RNA spots in the image stack
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1.mat	Matlab files containing all the SD_mRNA data
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CELLmaxRNAcy5_mid.csv	Column 1: Total number of RNA in the cell; Column 2: Total number of RNA in the cytoplasm; Column 3: Total number of RNA in the nucleus
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CELLmaxRNAtmr_mid.csv	Column 1: Total number of RNA in the cell; Column 2: Total number of RNA in the cytoplasm; Column 3: Total number of RNA in the nucleus
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CY53D3immax.tiff	Maximum intensity of the filtered RNA-FISH image for all detected RNA spots in the image stack
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CY53Dfilter.tiff	Gaussian smoothed and Laplacian of a gaussian filtered RNA FISH image stack
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CY5max.tif	Maximum intensity of the raw RNA-FISH image for all detected RNA spots in the image stack
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CY5maxF.tif	Maximum intensity of the filtered RNA-FISH image for all RNA spots in the image stack
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_TMR3D3immax.tiff	Maximum intensity of the filtered RNA-FISH image for all detected RNA spots in the image stack
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_TMR3Dfilter.tiff	Gaussian smoothed and Laplacian of a gaussian filtered RNA FISH image stack
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_TMRmax.tif	Maximum intensity of the raw RNA-FISH image for all detected RNA spots in the image stack
- Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_TMRmaxF.tif	Maximum intensity of the filtered RNA-FISH image for all RNA spots in the image stack
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1.mat	Matlab files containing all the SD_mRNA data
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CELLmaxRNAcy5_mid.csv	Column 1: Total number of RNA in the cell; Column 2: Total number of RNA in the cytoplasm; Column 3: Total number of RNA in the nucleus
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CELLmaxRNAtmr_mid.csv	Column 1: Total number of RNA in the cell; Column 2: Total number of RNA in the cytoplasm; Column 3: Total number of RNA in the nucleus
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CY53D3immax.tiff	Maximum intensity of the filtered RNA-FISH image for all detected RNA spots in the image stack
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CY53Dfilter.tiff	Gaussian smoothed and Laplacian of a gaussian filtered RNA FISH image stack
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CY5max.tif	Maximum intensity of the raw RNA-FISH image for all detected RNA spots in the image stack
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_CY5maxF.tif	Maximum intensity of the filtered RNA-FISH image for all RNA spots in the image stack
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_TMR3D3immax.tiff	Maximum intensity of the filtered RNA-FISH image for all detected RNA spots in the image stack
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_TMR3Dfilter.tiff	Gaussian smoothed and Laplacian of a gaussian filtered RNA FISH image stack
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_TMRmax.tif	Maximum intensity of the raw RNA-FISH image for all detected RNA spots in the image stack
+Exp2_rep3_35min_im1.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im1_TMRmaxF.tif	Maximum intensity of the filtered RNA-FISH image for all RNA spots in the image stack
 Exp2_rep3_35min_im2.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im2.mat	Matlab files containing all the SD_mRNA data
 Exp2_rep3_35min_im2.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im2_CELLmaxRNAcy5_mid.csv	Column 1: Total number of RNA in the cell; Column 2: Total number of RNA in the cytoplasm; Column 3: Total number of RNA in the nucleus
 Exp2_rep3_35min_im2.tif	Exp2_rep3/#2_Analyzed_images/SD_mRNA_Exp2_rep3_35min_im2_CELLmaxRNAtmr_mid.csv	Column 1: Total number of RNA in the cell; Column 2: Total number of RNA in the cytoplasm; Column 3: Total number of RNA in the nucleus
