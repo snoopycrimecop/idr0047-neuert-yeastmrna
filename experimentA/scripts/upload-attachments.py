@@ -94,11 +94,11 @@ def get_omero_targets(conn, projectname):
 
 
 def main(conn):
-    rootdir = '/uod/idr/filesets/idr0047-neuert/20180911-ftp'
+    rootdir = '/uod/idr/filesets/idr0047-neuert-yeastmRNA/20181016-ftp'
     uploads = list_files(rootdir)
     attachmap = parse_processed_file(
         '../idr0047-experimentA-processed.txt', rootdir)
-    datasets, images = get_omero_targets(conn, 'idr0047-neuert')
+    datasets, images = get_omero_targets(conn, 'idr0047-neuert-yeastmRNA')
 
     # Cross-check
     datasetsimages = set(datasets.keys()).union(images.keys())
