@@ -106,8 +106,10 @@ def main(conn):
         datasetsimages)
     uploads_without_attach = set(uploads).difference(attachmap.keys())
 
-    assert attach_without_target == set(), sorted(attach_without_target)
-    assert uploads_without_attach == set(), sorted(uploads_without_attach)[:2]
+    assert attach_without_target == set(), '\n  '.join(
+        [''] + sorted(attach_without_target))
+    assert uploads_without_attach == set(), '\n  '.join(
+        [''] + sorted(uploads_without_attach))
 
     upload_and_attach(conn, uploads, attachmap, datasets, images,
                       failifexists=True, dryrun=DRYRUN)
