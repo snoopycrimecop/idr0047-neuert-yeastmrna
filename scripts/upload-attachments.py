@@ -3,12 +3,15 @@
 # WARNING: This script will use your current OMERO login session if one
 # exists. If you want to use a different login ensure you logout first.
 
-DRYRUN = False
-
 import csv
 import os
 import omero.clients
 import omero.cli
+
+from uploadinplace import upload_ln_s
+
+DRYRUN = True
+OMERO_DATA_DIR = '/data/OMERO'
 
 
 def list_files(rootdir):
@@ -58,8 +61,12 @@ def upload_and_attach(conn, uploads, attachmap, datasets, images,
         print('Attaching %s to %s (%s %s %s)' % (
               filename, target, filepath, mimetype, namespace))
         if not dryrun:
-            fa = conn.createFileAnnfromLocalFile(
-                filepath, ns=namespace, mimetype=mimetype)
+            fo = upload_ln_s(filepath, conn, OMERO_DATA_DIR, mimetype)
+            fa = omero.model.FileAnnotationI()
+            fa.setFile(fo)
+            fa.setNs(omero.rtypes.rstring(namespace))
+            fa = conn.getUpdateService().saveAndReturnObject(fa)
+            fa = omero.gateway.FileAnnotationWrapper(conn, fa)
             target.linkAnnotation(fa)
 
 
