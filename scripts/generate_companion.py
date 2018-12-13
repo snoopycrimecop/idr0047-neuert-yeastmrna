@@ -7,6 +7,7 @@ import os
 import os.path
 import uuid
 import xml.etree.ElementTree as ET
+import sys
 
 
 BASE_DIRECTORY = os.environ.get(
@@ -53,7 +54,9 @@ assert not sorted(set(sd_mRNA_mat_list) - set(expected_mat_list))
 
 
 # Create secondary folder for analyzed files with companions
-COMPANION_DIRECTORY = os.path.join("%s-companions" % date.today().strftime("%Y%m%d"))
+COMPANION_DIRECTORY = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0]))),
+    "companions" % date.today().strftime("%Y%m%d"))
 
 for e in EXPERIMENTS:
     experiment_source_directory = os.path.join(BASE_DIRECTORY, FTP_FOLDER, e)
