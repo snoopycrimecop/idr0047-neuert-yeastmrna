@@ -63,7 +63,7 @@ def upload_and_attach(conn, uploads, attachmap, datasets, images,
         if not dryrun:
             fo = upload_ln_s(filepath, conn, OMERO_DATA_DIR, mimetype)
             fa = omero.model.FileAnnotationI()
-            fa.setFile(fo)
+            fa.setFile(fo._obj)
             fa.setNs(omero.rtypes.rstring(namespace))
             fa = conn.getUpdateService().saveAndReturnObject(fa)
             fa = omero.gateway.FileAnnotationWrapper(conn, fa)
@@ -104,7 +104,7 @@ def main(conn):
     rootdir = '/uod/idr/filesets/idr0047-neuert-yeastmRNA/20181016-ftp'
     uploads = list_files(rootdir)
     attachmap = parse_processed_file(
-        '../idr0047-experimentA-processed.txt', rootdir)
+        '../experimentA/idr0047-experimentA-processed.txt', rootdir)
     datasets, images = get_omero_targets(conn, 'idr0047-neuert-yeastmRNA')
 
     # Cross-check

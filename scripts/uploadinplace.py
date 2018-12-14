@@ -15,6 +15,12 @@ def upload_ln_s(filepath, conn, omero_data_dir, mimetype):
     with a symlink, and updating the OriginalFile metadata.
 
     Requires write access to the omero.data.dir Files directory
+
+    :param filepath: Path to the file to be symlinked into OMERO
+    :param conn: Connected BlitzGateway object
+    :param omero_data_dir: The OMERO data directory
+    :param mimetype: The mimetype to be assigned to the file in OMERO
+    :return: The wrapped OriginalFile for the symlinked file
     """
     BUFSIZE = 1048576
     abspath = os.path.abspath(filepath)
@@ -54,6 +60,7 @@ def upload_ln_s(filepath, conn, omero_data_dir, mimetype):
         omero.model.enums.ChecksumAlgorithmSHA1160))
     fo.setHasher(chk)
     fo.save()
+    return fo
 
 
 # filepath = '/uod/idr/hello.txt'
