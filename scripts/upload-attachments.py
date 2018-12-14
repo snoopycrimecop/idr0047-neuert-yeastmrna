@@ -10,7 +10,7 @@ import omero.cli
 
 from uploadinplace import upload_ln_s
 
-DRYRUN = True
+DRYRUN = False
 OMERO_DATA_DIR = '/data/OMERO'
 
 
@@ -40,7 +40,11 @@ def upload_and_attach(conn, uploads, attachmap, datasets, images,
             mimetype = 'application/x-matlab-data'
         namespace = 'idr.openmicroscopy.org/unstable/analysis/original'
 
-        targetname = attachmap[filepath]
+        try:
+            targetname = attachmap[filepath]
+        except KeyError:
+            print('ERROR: Unmentioned file found, ignoring: %s' % filepath)
+            continue
         try:
             target = images[targetname]
         except KeyError:
@@ -115,8 +119,10 @@ def main(conn):
 
     assert attach_without_target == set(), '\n  '.join(
         [''] + sorted(attach_without_target))
-    assert uploads_without_attach == set(), '\n  '.join(
-        [''] + sorted(uploads_without_attach))
+# There are some extra files that aren't in idr0047-experimentA-processed.txt
+# Ignore them instead of aborting
+#    assert uploads_without_attach == set(), '\n  '.join(
+#        [''] + sorted(uploads_without_attach))
 
     upload_and_attach(conn, uploads, attachmap, datasets, images,
                       failifexists=True, dryrun=DRYRUN)
