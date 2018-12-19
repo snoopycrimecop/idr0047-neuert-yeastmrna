@@ -12,6 +12,7 @@ from uploadinplace import upload_ln_s
 
 DRYRUN = False
 OMERO_DATA_DIR = '/data/OMERO'
+NAMESPACE = 'openmicroscopy.org/idr/analysis/original'
 
 
 def list_files(rootdir):
@@ -38,7 +39,6 @@ def upload_and_attach(conn, uploads, attachmap, datasets, images,
         else:
             # http://justsolve.archiveteam.org/wiki/MAT
             mimetype = 'application/x-matlab-data'
-        namespace = 'idr.openmicroscopy.org/unstable/analysis/original'
 
         try:
             targetname = attachmap[filepath]
@@ -63,12 +63,12 @@ def upload_and_attach(conn, uploads, attachmap, datasets, images,
                 continue
 
         print('Attaching %s to %s (%s %s %s)' % (
-              filename, target, filepath, mimetype, namespace))
+              filename, target, filepath, mimetype, NAMESPACE))
         if not dryrun:
             fo = upload_ln_s(filepath, conn, OMERO_DATA_DIR, mimetype)
             fa = omero.model.FileAnnotationI()
             fa.setFile(fo._obj)
-            fa.setNs(omero.rtypes.rstring(namespace))
+            fa.setNs(omero.rtypes.rstring(NAMESPACE))
             fa = conn.getUpdateService().saveAndReturnObject(fa)
             fa = omero.gateway.FileAnnotationWrapper(conn, fa)
             target.linkAnnotation(fa)
