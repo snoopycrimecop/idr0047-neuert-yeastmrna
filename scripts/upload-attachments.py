@@ -123,6 +123,10 @@ def main(conn):
 # Ignore them instead of aborting
 #    assert uploads_without_attach == set(), '\n  '.join(
 #        [''] + sorted(uploads_without_attach))
+    if uploads_without_attach:
+        print('\n  '.join(
+              ['WARNING: Unexpected files, these will not be uploaded:'] +
+              sorted(uploads_without_attach)))
 
     upload_and_attach(conn, uploads, attachmap, datasets, images,
                       failifexists=True, dryrun=DRYRUN)
