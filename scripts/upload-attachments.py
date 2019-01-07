@@ -109,7 +109,8 @@ def main(conn):
     uploads = list_files(rootdir)
     attachmap = parse_processed_file(
         '../experimentA/idr0047-experimentA-processed.txt', rootdir)
-    datasets, images = get_omero_targets(conn, 'idr0047-neuert-yeastmRNA')
+    datasets, images = get_omero_targets(
+        conn, 'idr0047-neuert-yeastmrna/experimentA')
 
     # Cross-check
     datasetsimages = set(datasets.keys()).union(images.keys())

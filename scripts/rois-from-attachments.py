@@ -80,7 +80,7 @@ def save_rois(conn, im, rois):
 
 def main(conn):
     project = conn.getObject(
-        'Project', attributes={'name': 'idr0047-neuert-yeastmRNA'})
+        'Project', attributes={'name': 'idr0047-neuert-yeastmrna/experimentA'})
     missing = []
     for dataset in project.listChildren():
         if dataset.name == 'processed':
