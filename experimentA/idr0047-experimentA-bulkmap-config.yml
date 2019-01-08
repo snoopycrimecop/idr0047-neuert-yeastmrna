@@ -30,6 +30,9 @@ columns:
   - name: Experimental Condition
     clientname: Experimental Condition
     include: yes
+  - name: Comment [Image File Comments]
+    clientname: Comment
+    include: yes
 
   ######################################################################
   # mapr groups
