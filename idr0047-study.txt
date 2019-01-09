@@ -1,0 +1,57 @@
+# STUDY DESCRIPTION SECTION				
+Comment[IDR Study Accession]	idr0047			
+Study Title	A microscopy data set of discrete spatial and temporal single molecule RNA expression in single cells			
+Study Type				
+Study Type Term Source REF				
+Study Type Term Accession				
+Study Description	We report a comprehensive single cell dataset of spatial distributions of nuclear and cytoplasmic mRNA as a function of time. We measure mRNA expression with single molecule RNA fluorescent in-situ hybridization microscopy in the yeast model organism Saccharomyces cerevisiae in tens of thousands of cells. The resulting dataset contains the discrete number of mRNA molecules in the nucleus and the cytoplasm for sixteen time points, two genes and two stress conditions each in biological duplicates or triplicates. We present these datasets as population means, fraction of cells above basal mRNA expression (ON-cells), the variance normalized by the expression mean (Fano factor), marginal probability of nuclear and cytoplasmic mRNA, and the joint probability of nuclear and cytoplasmic RNA expression. The reuse potential are in three areas: (1) development of discreate single cell modelling approaches, (2) building predictive models to study fundamental processes in transcription regulation, (3) development of single cell image processing approaches not possible with continuous, non-spatial datasets of low temporal resolution.		 	
+Study Organism	Saccharomyces cerevisiae			
+Study Organism Term Source REF	NCBITaxon			
+Study Organism Term Accession	4932			
+Study Experiments Number	1			
+Study External URL				
+Study Public Release Date				
+				
+# Study Publication				
+Study PubMed ID				
+Study Publication Title				
+Study Author List				
+Study PMC ID				
+Study DOI				
+				
+# Study Contacts				
+Study Person Last Name	Neuert			
+Study Person First Name	Gregor			
+Study Person Email	gregor.neuert@vanderbilt.edu			
+Study Person Address	Vanderbilt University, Nashville, TN, USA			
+Study Person ORCID				
+Study Person Roles	submitter			
+				
+# Study License and Data DOI				
+Study License	CC-BY 4.0			
+Study License URL	https://creativecommons.org/licenses/by/4.0/			
+Study Copyright	Neuert et al.			
+Study Data Publisher	University of Dundee			
+Study Data DOI				
+				
+Term Source Name	NCBITaxon	EFO	CMPO	FBbi
+Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/
+				
+				
+# EXPERIMENT SECTION				
+Experiment Number	1			
+Comment[IDR Experiment Name]	idr0047-neuert-yeastmrna/experimentA			
+Experiment Description	We performed single molecule in-situ hybridization on yeast cells that have been exposed to osmotic stress and measured mRNA expression for two genes. The goal of this study was to generate data sets for single cell transcription modeling.			
+Experiment Size		Average Image Dimension (XYZC): XYZCT	Total Tb: 0.05546	
+Experiment Example Images				
+Experiment Imaging Method	fluorescent in situ hybridization			
+Experiment Imaging Method Term Source REF	Fbbi			
+Experiment Imaging Method Term Accession				
+Experiment Comments				
+				
+# Protocols				
+Protocol Name	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol
+Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol
+Protocol Type Term Source REF	EFO	EFO		
+Protocol Type Term Accession	EFO_0003789	EFO_0003969		
+Protocol Description	CSM, 30C 0.2M NaCl, step	TRANS: brightfield of the cells; DAPI: fluorescent stained DNA; TMR: TAMRA labeled oligo nucleotide probes that bind to an STL1 mRNA; CY5: Cy5 labeled oligo nucleotide probes that bind to an CTT1 mRNA; each image in a z-stack was 200nm apart; Nikon Ti Eclipse epifluorescent microscope equipped with perfect focus (Nikon), a 100x VC DIC lens (Nikon), fluorescent filters for DAPI, TMR and CY5 (Semrock), an X-cite 120 fluorescent light source (Excelitas), and an Orca Flash 4v2 CMOS camera (Hamamatsu); Image acquisition with Micro Manager; Image processing with Matlab using costume written scripts; TRANS and DAPI images have been used for cell segmentation; TMR and CY5 images have been used to detect RNA spots; The RNA pots are detected by a Laplacian of a Gaussian filter throughout the image stack; The RNA in the nucleus and cytoplasm was determined by multiplying the segmented nuclear and cell boundary mask with the filtered RNA images followed by counting the number of RNA in each compartment. 		
