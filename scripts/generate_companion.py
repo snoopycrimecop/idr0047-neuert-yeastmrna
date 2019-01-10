@@ -47,6 +47,7 @@ EXTRA_IMAGES = set([
     ('Exp2_rep2', 1, 'im5'),
     ('Exp2_rep2', 50, 'im5'),
     ('Exp2_rep2', 60, 'im1'),
+    ('Exp2_rep2', 60, 'im2'),
     ('Exp2_rep2', 60, 'im3'),
     ('Exp2_rep2', 60, 'im4'),
     ('Exp2_rep3', 0, 'im5'),
@@ -69,7 +70,7 @@ expected_images_list = [
     '%s_%gmin_%s.tif' % (x, y, z) for (x, y, z) in EXTRA_IMAGES]
 missing_raw_images = set(expected_images_list) - set(raw_images_list)
 assert missing_raw_images == MISSING_IMAGES, missing_raw_images
-assert set(raw_images_list) - set(expected_images_list) is None
+assert set(raw_images_list) - set(expected_images_list) == set([])
 
 sd_mRNA_mat_list = map(
     os.path.basename,
@@ -83,7 +84,7 @@ assert not sorted(set(sd_mRNA_mat_list) - set(expected_mat_list))
 # Create secondary folder for analyzed files with companions
 COMPANION_DIRECTORY = os.path.join(
     os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0]))),
-    "companions" % date.today().strftime("%Y%m%d"))
+    "companions")
 
 for e in EXPERIMENTS:
     experiment_source_directory = os.path.join(BASE_DIRECTORY, FTP_FOLDER, e)
