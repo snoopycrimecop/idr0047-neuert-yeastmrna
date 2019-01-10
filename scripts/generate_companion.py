@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # Generate companion files
 
-from datetime import date
 import glob
 import os
 import os.path
@@ -32,17 +31,45 @@ MISSING_IMAGES = set([
     'Exp1_rep2_50min_im4.tif',
     'Exp2_rep3_40min_im3.tif'])
 
+EXTRA_IMAGES = set([
+    ('Exp1_rep2', 30, 'im7'),
+    ('Exp1_rep2', 30, 'im7'),
+    ('Exp2_rep1', 15, 'im5'),
+    ('Exp2_rep1', 15, 'im6'),
+    ('Exp2_rep1', 15, 'im7'),
+    ('Exp2_rep1', 15, 'im8'),
+    ('Exp2_rep1', 15, 'im9'),
+    ('Exp2_rep1', 1, 'im5'),
+    ('Exp2_rep1', 1, 'im6'),
+    ('Exp2_rep1', 20, 'im5'),
+    ('Exp2_rep2', 10, 'im5'),
+    ('Exp2_rep2', 1, 'im5'),
+    ('Exp2_rep2', 50, 'im5'),
+    ('Exp2_rep2', 60, 'im1'),
+    ('Exp2_rep2', 60, 'im2'),
+    ('Exp2_rep2', 60, 'im3'),
+    ('Exp2_rep2', 60, 'im4'),
+    ('Exp2_rep3', 0, 'im5'),
+    ('Exp2_rep3', 10, 'im5'),
+    ('Exp2_rep3', 15, 'im5'),
+    ('Exp2_rep3', 20, 'im5'),
+    ('Exp2_rep3', 25, 'im5'),
+    ('Exp2_rep3', 30, 'im5'),
+    ('Exp2_rep3', 35, 'im5'),
+    ('Exp2_rep3', 8, 'im5')],
+)
+
 # Review raw images
 raw_images_list = map(
     os.path.basename,
     glob.glob("%s/%s/*/%s/*" % (BASE_DIRECTORY, FTP_FOLDER, RAW_IMAGES_DIR)))
 expected_images_list = [
     '%s_%gmin_%s.tif' % (x, y, z) for x in EXPERIMENTS for
-    y in EXPERIMENTS[x] for z in POSITIONS]
+    y in EXPERIMENTS[x] for z in POSITIONS] + [
+    '%s_%gmin_%s.tif' % (x, y, z) for (x, y, z) in EXTRA_IMAGES]
 missing_raw_images = set(expected_images_list) - set(raw_images_list)
 assert missing_raw_images == MISSING_IMAGES, missing_raw_images
-# TODO: check all extra images end with im5.tif to im8.tif
-extra_raw_images = set(raw_images_list) - set(expected_images_list)
+assert set(raw_images_list) - set(expected_images_list) == set([])
 
 sd_mRNA_mat_list = map(
     os.path.basename,
@@ -56,7 +83,7 @@ assert not sorted(set(sd_mRNA_mat_list) - set(expected_mat_list))
 # Create secondary folder for analyzed files with companions
 COMPANION_DIRECTORY = os.path.join(
     os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0]))),
-    "companions" % date.today().strftime("%Y%m%d"))
+    "companions")
 
 for e in EXPERIMENTS:
     experiment_source_directory = os.path.join(BASE_DIRECTORY, FTP_FOLDER, e)
@@ -180,3 +207,6 @@ for experiment in EXPERIMENTS:
                     MISSING_IMAGES):
                 continue
             create_companion(experiment, timepoint, position)
+
+for (experiment, timepoint, position) in EXTRA_IMAGES:
+    create_companion(experiment, timepoint, position)
