@@ -104,7 +104,7 @@ http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd',
 }
 IMAGES = [
     {
-        'Image': {'ID': 'Image:0', 'Name': '3D images'},
+        'Image': {'ID': 'Image:0', 'Name': '3D'},
         'Pixels': {
             'ID': 'Pixels:0:0',
             'DimensionOrder': 'XYZTC',
@@ -136,7 +136,7 @@ IMAGES = [
         ]
     },
     {
-        'Image': {'ID': 'Image:1', 'Name': 'Projections images'},
+        'Image': {'ID': 'Image:1', 'Name': 'Projection'},
         'Pixels': {
             'ID': 'Pixels:1:0',
             'DimensionOrder': 'XYZTC',
