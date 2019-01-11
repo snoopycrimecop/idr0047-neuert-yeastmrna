@@ -192,7 +192,7 @@ def create_companion(experiment, timepoint, position):
                 "FirstC": str(t), "IFD": '0'})
             ET.SubElement(tiffdata, "UUID", attrib={
                 "FileName": tiffs[t] % (name)
-                }).text = str(uuid.uuid4())
+                }).text = "urn:uuid:%s" % str(uuid.uuid4())
 
     tree = ET.ElementTree(root)
     tree.write("%s/%s/%s.companion.ome" % (
