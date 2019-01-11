@@ -1,2 +1,89 @@
 <?xml version='1.0' encoding='utf-8'?>
-<OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06" xmlns:OME="http://www.openmicroscopy.org/Schemas/OME/2016-06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06 http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd"><Image ID="Image:0" Name="3D images"><Pixels DimensionOrder="XYZTC" ID="Pixels:0:0" SizeC="5" SizeT="1" SizeX="2048" SizeY="2048" SizeZ="25" Type="uint16"><Channel Color="65535" ID="Channel:0:0" Name="Nuclei" SamplesPerPixel="1" /><Channel Color="-16776961" ID="Channel:0:1" Name="CTT1 filter" SamplesPerPixel="1" /><Channel Color="-16776961" ID="Channel:0:2" Name="CTT1 immax" SamplesPerPixel="1" /><Channel Color="16711935" ID="Channel:0:3" Name="STL1 filter" SamplesPerPixel="1" /><Channel Color="16711935" ID="Channel:0:4" Name="STL1 immax" SamplesPerPixel="1" /><TiffData FirstC="0" IFD="0"><UUID FileName="#2_Analyzed_images/M_nuclei_Exp1_rep1_35min_im3_nuclei3D.tiff">f065af69-3e6e-431c-a218-6c902f0280a8</UUID></TiffData><TiffData FirstC="1" IFD="0"><UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_CY53Dfilter.tiff">eb421f88-503b-49e0-8f01-7c0bee6f7547</UUID></TiffData><TiffData FirstC="2" IFD="0"><UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_CY53D3immax.tiff">3abc8eba-c22e-41c4-a157-64266fbc145a</UUID></TiffData><TiffData FirstC="3" IFD="0"><UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_TMR3Dfilter.tiff">fe450e41-1efc-44f5-bfe7-fb582511835e</UUID></TiffData><TiffData FirstC="4" IFD="0"><UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_TMR3D3immax.tiff">9d5f30b9-a1c0-41ca-afba-1310d896e8a4</UUID></TiffData></Pixels></Image><Image ID="Image:1" Name="Projections images"><Pixels DimensionOrder="XYZTC" ID="Pixels:1:0" SizeC="7" SizeT="1" SizeX="2048" SizeY="2048" SizeZ="1" Type="uint16"><Channel Color="-1" ID="Channel:1:0" Name="Cells" SamplesPerPixel="1" /><Channel Color="-1" ID="Channel:1:1" Name="Brightfield processed" SamplesPerPixel="1" /><Channel Color="65535" ID="Channel:1:2" Name="Nuclei" SamplesPerPixel="1" /><Channel Color="-16776961" ID="Channel:1:3" Name="CTT1 immax" SamplesPerPixel="1" /><Channel Color="-16776961" ID="Channel:1:4" Name="CTT1 filt" SamplesPerPixel="1" /><Channel Color="16711935" ID="Channel:1:5" Name="STL1 immax" SamplesPerPixel="1" /><Channel Color="16711935" ID="Channel:1:6" Name="STL1 filt" SamplesPerPixel="1" /><TiffData FirstC="0" IFD="0"><UUID FileName="#2_Analyzed_images/M_Lab_Exp1_rep1_35min_im3_Cells.tif">baa86ee4-e3d5-4be3-91d9-f15793d1843e</UUID></TiffData><TiffData FirstC="1" IFD="0"><UUID FileName="#2_Analyzed_images/M_Lab_Exp1_rep1_35min_im3_trans_plane.tif">3beb4154-c7c8-4265-a927-e43bc03f087f</UUID></TiffData><TiffData FirstC="2" IFD="0"><UUID FileName="#2_Analyzed_images/M_nuclei_Exp1_rep1_35min_im3_nuclei.tif">cf8de171-773d-48dc-9b73-64d507b34d0f</UUID></TiffData><TiffData FirstC="3" IFD="0"><UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_CY5max.tif">057d3c37-a35a-48b3-bf1e-04f263339637</UUID></TiffData><TiffData FirstC="4" IFD="0"><UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_CY5maxF.tif">c32b6c7f-1439-43ad-8e90-2b8be71b7afe</UUID></TiffData><TiffData FirstC="5" IFD="0"><UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_TMRmax.tif">78a1792c-faeb-491c-8eaf-2395ddecd254</UUID></TiffData><TiffData FirstC="6" IFD="0"><UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_TMRmaxF.tif">7b683157-0524-478b-af91-e1331c85b302</UUID></TiffData></Pixels></Image></OME>
+<OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06"
+xmlns:OME="http://www.openmicroscopy.org/Schemas/OME/2016-06"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06 http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd">
+
+  <Image ID="Image:0" Name="3D">
+    <Pixels DimensionOrder="XYZTC" ID="Pixels:0:0" SizeC="5"
+    SizeT="1" SizeX="2048" SizeY="2048" SizeZ="25" Type="uint16">
+      <Channel Color="65535" ID="Channel:0:0" Name="Nuclei"
+      SamplesPerPixel="1" />
+      <Channel Color="-16776961" ID="Channel:0:1"
+      Name="CTT1 filter" SamplesPerPixel="1" />
+      <Channel Color="-16776961" ID="Channel:0:2" Name="CTT1 immax"
+      SamplesPerPixel="1" />
+      <Channel Color="16711935" ID="Channel:0:3" Name="STL1 filter"
+      SamplesPerPixel="1" />
+      <Channel Color="16711935" ID="Channel:0:4" Name="STL1 immax"
+      SamplesPerPixel="1" />
+      <TiffData FirstC="0" IFD="0">
+        <UUID FileName="#2_Analyzed_images/M_nuclei_Exp1_rep1_35min_im3_nuclei3D.tiff">
+        urn:uuid:1cc0d4bb-2594-47f0-8e4a-22677bdf8e08</UUID>
+      </TiffData>
+      <TiffData FirstC="1" IFD="0">
+        <UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_CY53Dfilter.tiff">
+        urn:uuid:1d8ee8f6-7709-481d-9a68-5ee4ce9d99ce</UUID>
+      </TiffData>
+      <TiffData FirstC="2" IFD="0">
+        <UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_CY53D3immax.tiff">
+        urn:uuid:b2ef1f23-e52b-4952-ad5a-61af2b1ed772</UUID>
+      </TiffData>
+      <TiffData FirstC="3" IFD="0">
+        <UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_TMR3Dfilter.tiff">
+        urn:uuid:59c63dbb-1cea-4c35-b6b9-49a72916b8e0</UUID>
+      </TiffData>
+      <TiffData FirstC="4" IFD="0">
+        <UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_TMR3D3immax.tiff">
+        urn:uuid:4806e185-f973-46b2-98d5-3d7955832439</UUID>
+      </TiffData>
+    </Pixels>
+  </Image>
+  <Image ID="Image:1" Name="Projection">
+    <Pixels DimensionOrder="XYZTC" ID="Pixels:1:0" SizeC="7"
+    SizeT="1" SizeX="2048" SizeY="2048" SizeZ="1" Type="uint16">
+      <Channel Color="-1" ID="Channel:1:0" Name="Cells"
+      SamplesPerPixel="1" />
+      <Channel Color="-1" ID="Channel:1:1"
+      Name="Brightfield processed" SamplesPerPixel="1" />
+      <Channel Color="65535" ID="Channel:1:2" Name="Nuclei"
+      SamplesPerPixel="1" />
+      <Channel Color="-16776961" ID="Channel:1:3" Name="CTT1 immax"
+      SamplesPerPixel="1" />
+      <Channel Color="-16776961" ID="Channel:1:4" Name="CTT1 filt"
+      SamplesPerPixel="1" />
+      <Channel Color="16711935" ID="Channel:1:5" Name="STL1 immax"
+      SamplesPerPixel="1" />
+      <Channel Color="16711935" ID="Channel:1:6" Name="STL1 filt"
+      SamplesPerPixel="1" />
+      <TiffData FirstC="0" IFD="0">
+        <UUID FileName="#2_Analyzed_images/M_Lab_Exp1_rep1_35min_im3_Cells.tif">
+        urn:uuid:41810703-996f-434a-a40c-e7343207516b</UUID>
+      </TiffData>
+      <TiffData FirstC="1" IFD="0">
+        <UUID FileName="#2_Analyzed_images/M_Lab_Exp1_rep1_35min_im3_trans_plane.tif">
+        urn:uuid:51becdde-25b6-456c-bde2-be6371b41aa0</UUID>
+      </TiffData>
+      <TiffData FirstC="2" IFD="0">
+        <UUID FileName="#2_Analyzed_images/M_nuclei_Exp1_rep1_35min_im3_nuclei.tif">
+        urn:uuid:2afc2666-2288-45d7-8287-126790246f9e</UUID>
+      </TiffData>
+      <TiffData FirstC="3" IFD="0">
+        <UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_CY5max.tif">
+        urn:uuid:6f78fc1d-e2b5-4f65-b1ce-20f771d480e5</UUID>
+      </TiffData>
+      <TiffData FirstC="4" IFD="0">
+        <UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_CY5maxF.tif">
+        urn:uuid:acea8320-3a6f-4bde-b90d-ca44be72bcd4</UUID>
+      </TiffData>
+      <TiffData FirstC="5" IFD="0">
+        <UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_TMRmax.tif">
+        urn:uuid:c6afa56a-0cda-4a3a-b8f0-aeba5aa3a938</UUID>
+      </TiffData>
+      <TiffData FirstC="6" IFD="0">
+        <UUID FileName="#2_Analyzed_images/SD_mRNA_Exp1_rep1_35min_im3_TMRmaxF.tif">
+        urn:uuid:220b0c23-51fb-41bf-b9fb-11630c7185ed</UUID>
+      </TiffData>
+    </Pixels>
+  </Image>
+</OME>
