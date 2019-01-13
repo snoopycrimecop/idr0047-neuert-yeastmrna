@@ -33,6 +33,15 @@ columns:
   - name: Comment [Image File Comments]
     clientname: Comment
     include: yes
+  - name: Original Image
+    clientname: Original Image
+    include: yes
+  - name: Processed image 1
+    clientname: Processed image 1
+    include: yes
+  - name: Processed image 2
+    clientname: Processed image 2
+    include: yes
 
   ######################################################################
   # mapr groups
