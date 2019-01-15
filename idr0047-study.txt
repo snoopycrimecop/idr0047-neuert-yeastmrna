@@ -10,6 +10,7 @@ Study Organism Term Source REF	NCBITaxon
 Study Organism Term Accession	4932			
 Study Experiments Number	1			
 Study External URL				
+Study BioStudies Accession	S-BIAD1
 Study Public Release Date				
 				
 # Study Publication				
