@@ -1,0 +1,14 @@
+channels:
+  0: {active: true, color: FFFFFF, end: 1.0, label: Cells, max: 1.0, min: 0.0, start: 0.0}
+  1: {active: true, color: FFFFFF, end: 640.0, label: Brightfield processed, max: 640.0,
+    min: 128.0, start: 128.0}
+  2: {active: true, color: 0000FF, end: 1.0, label: Nuclei, max: 1.0, min: 0.0, start: 0.0}
+  3: {active: true, color: FF00FF, end: 1115.0, label: CTT1 immax, max: 1115.0, min: 400.0,
+    start: 400.0}
+  4: {active: true, color: FF0000, end: 423.0, label: CTT1 filt, max: 423.0, min: 0.0,
+    start: 0.0}
+  5: {active: true, color: 00FF00, end: 2613.0, label: STL1 immax, max: 2613.0, min: 1800.0,
+    start: 1800.0}
+  6: {active: true, color: 00FFFF, end: 1276.0, label: STL1 filt, max: 1276.0, min: 500.0,
+    start: 500.0}
+greyscale: false
