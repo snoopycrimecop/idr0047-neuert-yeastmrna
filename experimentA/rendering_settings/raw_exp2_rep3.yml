@@ -1,3 +1,4 @@
+version: 2
 channels:
   1: {active: true, color: FF00CC, end: 2500.0, label: 3-CY5, start: 400.0}
   2: {active: true, color: FFFF00, end: 2800.0, label: 5-TMR, start: 500.0}

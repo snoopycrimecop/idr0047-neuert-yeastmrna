@@ -1,3 +1,4 @@
+version: 2
 channels:
   1: {active: true, color: 0000FF, end: 1.0, label: Nuclei, max: 1.0, min: 0.0, start: 0.0}
   2: {active: true, color: FF00FF, end: 1000.0, label: CTT1 filter, max: 1000.0, min: 0.0,

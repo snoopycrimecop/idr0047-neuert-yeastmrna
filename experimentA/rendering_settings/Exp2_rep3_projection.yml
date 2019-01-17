@@ -1,3 +1,4 @@
+version: 2
 channels:
   1: {active: true, color: FFFFFF, end: 1.0, label: Cells, max: 1.0, min: 0.0, start: 0.0}
   2: {active: true, color: FFFFFF, end: 640.0, label: Brightfield processed, max: 640.0,
