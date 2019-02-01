@@ -1,0 +1,44 @@
+---
+channels:
+  1:
+    active: true
+    color: 0000FF
+    end: 1.0
+    label: Nuclei
+    max: 1.0
+    min: 0.0
+    start: 0.0
+  2:
+    active: true
+    color: FF00FF
+    end: 1000.0
+    label: CTT1 filter
+    max: 1000.0
+    min: 0.0
+    start: 0.0
+  3:
+    active: true
+    color: FF0000
+    end: 1000.0
+    label: CTT1 immax
+    max: 1000.0
+    min: 0.0
+    start: 0.0
+  4:
+    active: true
+    color: 00FF00
+    end: 500.0
+    label: STL1 filter
+    max: 500.0
+    min: 0.0
+    start: 0.0
+  5:
+    active: true
+    color: 00FFFF
+    end: 500.0
+    label: STL1 immax
+    max: 500.0
+    min: 0.0
+    start: 0.0
+greyscale: false
+version: 2

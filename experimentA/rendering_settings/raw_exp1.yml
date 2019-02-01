@@ -1,0 +1,22 @@
+---
+channels:
+  1:
+    active: true
+    color: FF00CC
+    end: 2300.0
+    label: 3-CY5
+    start: 400.0
+  2:
+    active: true
+    color: FFFF00
+    end: 3600.0
+    label: 5-TMR
+    start: 1400.0
+  3:
+    active: true
+    color: 00FFFF
+    end: 14000.0
+    label: 1-DAPI
+    start: 1400.0
+greyscale: false
+version: 2
