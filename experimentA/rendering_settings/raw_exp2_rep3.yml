@@ -1,6 +1,22 @@
-version: 2
+---
 channels:
-  1: {active: true, color: FF00CC, end: 2500.0, label: 3-CY5, start: 400.0}
-  2: {active: true, color: FFFF00, end: 2800.0, label: 5-TMR, start: 500.0}
-  3: {active: true, color: 00FFFF, end: 4000.0, label: 1-DAPI, start: 1500.0}
+  1:
+    active: true
+    color: FF00CC
+    end: 2500.0
+    label: 3-CY5
+    start: 400.0
+  2:
+    active: true
+    color: FFFF00
+    end: 2800.0
+    label: 5-TMR
+    start: 500.0
+  3:
+    active: true
+    color: 00FFFF
+    end: 4000.0
+    label: 1-DAPI
+    start: 1500.0
 greyscale: false
+version: 2
