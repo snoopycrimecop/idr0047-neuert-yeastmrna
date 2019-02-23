@@ -15,8 +15,8 @@ Study Public Release Date
 				
 # Study Publication				
 Study PubMed ID				
-Study Publication Title				
-Study Author List				
+Study Publication Title	A microscopy data set of discrete spatial and temporal single molecule RNA expression in single cells			
+Study Author List	Guoliang Li, Gregor Neuert			
 Study PMC ID				
 Study DOI				
 				
@@ -33,7 +33,7 @@ Study License	CC-BY 4.0
 Study License URL	https://creativecommons.org/licenses/by/4.0/			
 Study Copyright	Neuert et al.			
 Study Data Publisher	University of Dundee			
-Study Data DOI				
+Study Data DOI	https://doi.org/10.17867/10000118			
 				
 Term Source Name	NCBITaxon	EFO	CMPO	FBbi
 Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/
