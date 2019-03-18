@@ -21,11 +21,11 @@ defaults:
 
 columns:
 
-  - name: Protocol
-    clientname: Protocol
+  - name: Protocol 1
+    clientname: Protocol 1
     include: yes
-  - name: Protocol REF
-    clientname: Protocol REF
+  - name: Protocol 2
+    clientname: Protocol 2
     include: yes
   - name: Experimental Condition
     clientname: Experimental Condition
