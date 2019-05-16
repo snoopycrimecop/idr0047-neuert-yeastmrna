@@ -1,9 +1,9 @@
 # STUDY DESCRIPTION SECTION				
 Comment[IDR Study Accession]	idr0047			
 Study Title	A microscopy data set of discrete spatial and temporal single molecule RNA expression in single cells			
-Study Type				
-Study Type Term Source REF				
-Study Type Term Accession				
+Study Type	fluorescence in situ hybridization				
+Study Type Term Source REF	NCIT				
+Study Type Term Accession	NCIT_C17563				
 Study Description	We report a comprehensive single cell dataset of spatial distributions of nuclear and cytoplasmic mRNA as a function of time. We measure mRNA expression with single molecule RNA fluorescent in-situ hybridization microscopy in the yeast model organism Saccharomyces cerevisiae in tens of thousands of cells. The resulting dataset contains the discrete number of mRNA molecules in the nucleus and the cytoplasm for sixteen time points, two genes and two stress conditions each in biological duplicates or triplicates. We present these datasets as population means, fraction of cells above basal mRNA expression (ON-cells), the variance normalized by the expression mean (Fano factor), marginal probability of nuclear and cytoplasmic mRNA, and the joint probability of nuclear and cytoplasmic RNA expression. The reuse potential are in three areas: (1) development of discreate single cell modelling approaches, (2) building predictive models to study fundamental processes in transcription regulation, (3) development of single cell image processing approaches not possible with continuous, non-spatial datasets of low temporal resolution.		 	
 Study Organism	Saccharomyces cerevisiae			
 Study Organism Term Source REF	NCBITaxon			
@@ -35,19 +35,20 @@ Study Copyright	Neuert et al.
 Study Data Publisher	University of Dundee			
 Study Data DOI	https://doi.org/10.17867/10000118			
 				
-Term Source Name	NCBITaxon	EFO	CMPO	FBbi
-Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/
+Term Source Name	NCBITaxon	EFO	CMPO	FBbi	NCIT
+Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/	http://purl.obolibrary.org/obo/
 				
 				
 # EXPERIMENT SECTION				
 Experiment Number	1			
-Comment[IDR Experiment Name]	idr0047-neuert-yeastmrna/experimentA			
+Comment[IDR Experiment Name]	idr0047-neuert-yeastmrna/experimentA	
+Experiment Sample Type	cell
 Experiment Description	We performed single molecule in-situ hybridization on yeast cells that have been exposed to osmotic stress and measured mRNA expression for two genes. The goal of this study was to generate data sets for single cell transcription modeling.			
 Experiment Size		Average Image Dimension (XYZC): XYZCT	Total Tb: 0.05546	
 Experiment Example Images				
-Experiment Imaging Method	fluorescent in situ hybridization			
+Experiment Imaging Method	bright-field microscopy	fluorescence microscopy			
 Experiment Imaging Method Term Source REF	Fbbi			
-Experiment Imaging Method Term Accession				
+Experiment Imaging Method Term Accession	FBbi_00000243	FBbi_00000246				
 Experiment Comments				
 				
 # Protocols				
