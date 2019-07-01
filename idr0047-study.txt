@@ -14,18 +14,18 @@ Study BioStudies Accession	S-BIAD1
 Study Public Release Date	2019-01-16				
 				
 # Study Publication				
-Study PubMed ID				
-Study Publication Title	A microscopy data set of discrete spatial and temporal single molecule RNA expression in single cells			
+Study PubMed ID	31209217				
+Study Publication Title	Multiplex RNA single molecule FISH of inducible mRNAs in single yeast cells			
 Study Author List	Guoliang Li, Gregor Neuert			
-Study PMC ID				
-Study DOI				
+Study PMC ID	    PMC6572782				
+Study DOI	https://doi.org/10.1038/s41597-019-0106-6				
 				
 # Study Contacts				
 Study Person Last Name	Neuert			
 Study Person First Name	Gregor			
 Study Person Email	gregor.neuert@vanderbilt.edu			
 Study Person Address	Vanderbilt University, Nashville, TN, USA			
-Study Person ORCID				
+Study Person ORCID	0000-0002-8928-6425			
 Study Person Roles	submitter			
 				
 # Study License and Data DOI				
