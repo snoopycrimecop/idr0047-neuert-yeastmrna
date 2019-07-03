@@ -17,7 +17,7 @@ Study Public Release Date	2019-01-16
 Study PubMed ID	31209217				
 Study Publication Title	Multiplex RNA single molecule FISH of inducible mRNAs in single yeast cells			
 Study Author List	Guoliang Li, Gregor Neuert			
-Study PMC ID	    PMC6572782				
+Study PMC ID	PMC6572782				
 Study DOI	https://doi.org/10.1038/s41597-019-0106-6				
 				
 # Study Contacts				
