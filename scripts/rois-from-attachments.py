@@ -15,7 +15,7 @@ def get_label_image(im):
         try:
             filename = ann.getFile().name
             if re.match('M_Lab_.+\\.mat', filename):
-                print 'Found: %s' % filename
+                print('Found: %s' % filename)
                 break
         except AttributeError:
             continue
@@ -60,7 +60,7 @@ def create_rois(im):
     labels = get_label_image(im)
     print(im.name, labels.shape, labels.min(), labels.max())
     rois = []
-    for index in xrange(1, int(labels.max()) + 1):
+    for index in range(1, int(labels.max()) + 1):
         rgba = (128, 128, 128, 128)
         roi = roi_from_binary_image(labels == index, rgba)
         rois.append(roi)
@@ -98,7 +98,7 @@ def main(conn):
                 rois = create_rois(im)
                 save_rois(conn, im, rois)
             except Exception as e:
-                print e
+                print(e)
                 missing.append((im.id, im.name))
                 # raise
 
